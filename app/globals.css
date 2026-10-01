@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fffaf0;
+  --foreground: #22132f;
+  --purple: #34124d;
+  --purple-soft: #6f3aa0;
+  --gold: #d6a738;
+  --cream: #fff8e7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(circle at top left, rgba(214, 167, 56, 0.18), transparent 34rem),
+    linear-gradient(180deg, #fffaf0 0%, #f8f1ff 100%);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.elegant-heading {
+  font-family: Georgia, "Times New Roman", serif;
+  letter-spacing: -0.03em;
+}
+
+.card {
+  border: 1px solid rgba(52, 18, 77, 0.12);
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 24px 70px rgba(52, 18, 77, 0.10);
+}
+
+.input {
+  width: 100%;
+  border-radius: 0.9rem;
+  border: 1px solid rgba(52, 18, 77, 0.18);
+  background: white;
+  padding: 0.8rem 0.95rem;
+  color: var(--foreground);
+  outline: none;
+}
+
+.input:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(214, 167, 56, 0.24);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  padding: 0.78rem 1.1rem;
+  font-weight: 700;
+  transition: transform 150ms ease, box-shadow 150ms ease, background 150ms ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn-primary {
+  background: var(--purple);
+  color: white;
+  box-shadow: 0 12px 30px rgba(52, 18, 77, 0.22);
+}
+
+.btn-secondary {
+  border-color: rgba(52, 18, 77, 0.16);
+  background: white;
+  color: var(--purple);
+}
+
+.btn-gold {
+  background: var(--gold);
+  color: #23120b;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  background: rgba(52, 18, 77, 0.06);
+  color: var(--purple);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.table th,
+.table td {
+  border-bottom: 1px solid rgba(52, 18, 77, 0.1);
+  padding: 0.9rem;
+}
+
+@media print {
+  body {
+    background: white;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-card {
+    border: none;
+    box-shadow: none;
+  }
+}

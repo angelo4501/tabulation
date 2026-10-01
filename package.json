@@ -1,0 +1,58 @@
+{
+  "name": "kalook-tabulation",
+  "version": "1.0.0",
+  "description": "KALOOK! Simple Pageant Tabulation App",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angelo4501/tabulation.git"
+  },
+  "keywords": [
+    "pageant",
+    "tabulation",
+    "nextjs",
+    "supabase"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angelo4501/tabulation/issues"
+  },
+  "homepage": "https://github.com/angelo4501/tabulation#readme",
+  "dependencies": {
+    "@hookform/resolvers": "^5.9.1",
+    "@supabase/ssr": "^0.12.7",
+    "@supabase/supabase-js": "^2.117.2",
+    "lucide-react": "^1.49.0",
+    "next": "^16.3.8",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-hook-form": "^7.89.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^26.6.3",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "autoprefixer": "^10.6.1",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.3.8",
+    "postcss": "^8.5.28",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^6.0.3",
+    "vitest": "^5.0.3"
+  }
+}
